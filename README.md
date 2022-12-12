@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 💭 Techst
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://github.com/gmlunesa/Techst/blob/master/Assets/Images/Techst.png" height="320" alt="Techst Preview">
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+/ˈtɛkst/
 
-### `npm start`
+Bootstrap your own chat application with Techst. Within minutes, you can configure and launch a private real-time messaging platform for free using popular deployment solutions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features and Functionalities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Send and receive messages in real-time
+- Register and authorize through email
+- Search other accounts and create a chatroom
 
-### `npm test`
+### Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| <img src="https://raw.githubusercontent.com/yurijserrano/Github-Profile-Readme-Logos/master/frameworks/react.svg" width="100" height="100" alt="React"> | <img src="https://raw.githubusercontent.com/yurijserrano/Github-Profile-Readme-Logos/master/cloud/firebase.svg" width="100" height="100" alt="Firebase"> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-### `npm run build`
+## Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following are the steps on running the application. You may find a more in-depth guide in the [Techst](https://github.com/gmlunesa/techst/wiki) wiki.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   git clone https://github.com/gmlunesa/techst.git
+   ```
 
-### `npm run eject`
+2. Install Node modules.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Go to the [Firebase Console](https://console.firebase.google.com) and click "Add project".
+4. [Firebase Console] Under the `Build` product category, select `Authentication`.
+5. [Firebase Console] Under the `Sign-in method` tab, enable `Email/Password` option.
+6. [Firebase Console] Under the `Build` product category, select `Firestore Database`.
+7. [Firebase Console] Click the `Create Database` button and set up the database accordingly.
+8. [Firebase Console] Under the `Build` product category, select `Storage`.
+9. [Firebase Console] Click the `Get Started` button and set up the cloud storage accordingly.
+10. [Firebase Console] In the `Project Overview`, add an app by selecting the `Web` button.
+11. Copy the Firebase configuration that has been generated.
+12. Open the `firebase.js` file, paste and replace the Firebase configuration under the `// TODO: Replace` comment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```
+    // Import the firebase package
+    import firebase from 'firebase';
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    // TODO: Replace
+      apiKey: 'YOUR_API_KEY',
+      authDomain: 'YOUR_AUTH_DOMAIN',
+      projectId: 'YOUR_PROJECT_ID',
+      storageBucket: 'YOUR_STORAGE_BUCKET',
+      messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+      appId: 'YOUR_APP_ID',
+    ```
 
-## Learn More
+13. Rename the `firebase.sample.js` file to `firebase.js`.
+14. Run the application.
+    ```
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[MIT 🌱 Fully open-source](https://github.com/gmlunesa/techst/blob/main/LICENSE)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with 💫✨ by [gmlunesa](https://gmlunesa.com)
