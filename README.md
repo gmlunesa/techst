@@ -1,6 +1,6 @@
 # 💭 Techst
 
-<img src="https://github.com/gmlunesa/Techst/blob/master/Assets/Images/Techst.png" height="320" alt="Techst Preview">
+<img src="https://github.com/gmlunesa/techst/blob/master/images/TechstPreview.png" height="320" alt="Techst Preview">
 
 ## About
 
