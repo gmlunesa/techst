@@ -44,7 +44,7 @@ The following are the steps on running the application. You may find a more in-d
 9. [Firebase Console] Click the `Get Started` button and set up the cloud storage accordingly.
 10. [Firebase Console] In the `Project Overview`, add an app by selecting the `Web` button.
 11. Copy the Firebase configuration that has been generated.
-12. Open the `firebase.js` file, paste and replace the Firebase configuration under the `// TODO: Replace` comment.
+12. Open the `firebase.sample.js` file, paste and replace the Firebase configuration under the `// TODO: Replace` comment.
 
     ```
     // Import the firebase package
@@ -71,4 +71,4 @@ The following are the steps on running the application. You may find a more in-d
 
 ---
 
-Made with 💫✨ by [gmlunesa](https://gmlunesa.com)
+Made with 💫✨ by Goldy Mariz Lunesa @[gmlunesa](https://gmlunesa.com)
